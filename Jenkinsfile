@@ -29,8 +29,8 @@ pipeline {
             sh '''
             terraform apply -auto-approve
 
-             sudo -i
-         yum update
+            
+                     yum update
          yum install maven -y
 git clone https://github.com/yemmie69/myweatherapp.git
 cd myweatherapp
