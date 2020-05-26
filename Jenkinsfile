@@ -11,6 +11,9 @@ pipeline {
             echo 'initializing terraform'
             sh '''
          terraform init
+        
+
+
             '''
          }
       }
@@ -25,6 +28,14 @@ pipeline {
             echo 'terraform apply'
             sh '''
             terraform apply -auto-approve
+
+             sudo -i
+         yum update
+         yum install maven -y
+git clone https://github.com/yemmie69/myweatherapp.git
+cd myweatherapp
+mvn clean package
+mvn spring-boot:run -Dapp.weather.locations=Nigeria/Lagos,Nigeria/Kano &
             
             '''
          }
