@@ -25,7 +25,7 @@ pipeline {
             echo 'terraform apply'
             sh '''
             terraform apply -auto-approve
-            yum install git -y
+            sudo yum install git -y
             git clone https://github.com/yemmie69/blue-box
             cd myweatherapp
             mvn clean package
