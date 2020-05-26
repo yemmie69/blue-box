@@ -25,11 +25,7 @@ pipeline {
             echo 'terraform apply'
             sh '''
             terraform apply -auto-approve
-            sudo yum install git -y
-            git clone https://github.com/yemmie69/blue-box
-            cd myweatherapp
-            mvn clean package
-            mvn spring-boot:run -Dapp.weather.locations=Nigeria/Lagos,Nigeria/Kano &
+            
             '''
          }
       }
