@@ -14,7 +14,7 @@ pipeline {
             rm -rf
          terraform init
         
-
+ terraform apply -auto-approve
 
             '''
          }
@@ -30,7 +30,7 @@ pipeline {
             echo 'terraform apply'
             sh '''
             
-            terraform apply -auto-approve
+           
 
             sudo -i
                     sudo yum update
