@@ -35,7 +35,7 @@ pipeline {
             sudo -i
                     sudo yum update
          sudo yum install git maven -y
-                 rm -rf
+               
     
  git clone https://github.com/yemmie69/myweatherapp.git
 cd myweatherapp
