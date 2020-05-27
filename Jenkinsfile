@@ -10,6 +10,8 @@ pipeline {
          steps {
             echo 'initializing terraform'
             sh '''
+
+            rm -f
          terraform init
         
 
@@ -27,6 +29,7 @@ pipeline {
          steps {
             echo 'terraform apply'
             sh '''
+             rm -f
             terraform apply -auto-approve
 
             sudo -i
