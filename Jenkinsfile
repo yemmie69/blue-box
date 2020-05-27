@@ -31,7 +31,7 @@ pipeline {
 
             sudo -i
                     sudo yum update
-         sudo yum install maven -y
+         sudo yum install git maven -y
 git clone https://github.com/yemmie69/myweatherapp.git
 cd myweatherapp
 mvn clean package
