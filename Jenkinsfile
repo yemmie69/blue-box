@@ -29,11 +29,8 @@ pipeline {
          steps {
             echo 'terraform apply'
             sh '''
-            
-           
-
             sudo -i
-                    sudo yum update
+                    sudo yum update -y
          sudo yum install tomcat git maven -y
          
      rm -rf myweatherapp          
