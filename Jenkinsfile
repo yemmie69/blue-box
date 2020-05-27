@@ -11,7 +11,7 @@ pipeline {
             echo 'initializing terraform'
             sh '''
 
-            rm -f
+            rm -rf
          terraform init
         
 
@@ -29,14 +29,14 @@ pipeline {
          steps {
             echo 'terraform apply'
             sh '''
-             rm -f
+             rm -rf
             terraform apply -auto-approve
 
             sudo -i
                     sudo yum update
          sudo yum install git maven -y
 git clone https://github.com/yemmie69/myweatherapp.git
- rm -f
+ rm -rf
 cd myweatherapp
 mvn clean package
 mvn spring-boot:run -Dapp.weather.locations=Nigeria/Lagos,Nigeria/Kano &
