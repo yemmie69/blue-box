@@ -41,6 +41,7 @@ pipeline {
              cd myweatherapp
 mvn clean package
 mvn spring-boot:run -Dapp.weather.locations=Nigeria/Lagos,Nigeria/Kano &
+service tomcat restart
             
             '''
          }
