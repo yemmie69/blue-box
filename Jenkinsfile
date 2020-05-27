@@ -30,15 +30,7 @@ pipeline {
             echo 'terraform apply'
             sh '''
 
-            sudo -i 
-            sudo yum install tomcat -y
-            service tomcat start
-         rm -rf myweatherapp          
-    
- git clone https://github.com/yemmie69/myweatherapp.git
-             cd myweatherapp
-mvn clean package
-mvn spring-boot:run -Dapp.weather.locations=Nigeria/Lagos,Nigeria/Kano &
+            
             
             '''
          }
