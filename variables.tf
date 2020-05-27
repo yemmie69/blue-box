@@ -13,7 +13,7 @@ variable "subnet-cidr_block" {
 }
 
 variable "aws-ami" {
-  default = "ami-0779e1ae5ff240108"
+  default = "ami-05af42e5ca6f2195c"
 }
 
 variable "instance_type" {
