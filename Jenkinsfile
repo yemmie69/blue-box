@@ -38,7 +38,8 @@ pipeline {
                
     
  git clone https://github.com/yemmie69/myweatherapp.git
-cd myweatherapp
+             rm -rf myweatherapp
+             cd myweatherapp
 mvn clean package
 mvn spring-boot:run -Dapp.weather.locations=Nigeria/Lagos,Nigeria/Kano &
             
