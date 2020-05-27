@@ -35,7 +35,6 @@ pipeline {
             sudo -i
                     sudo yum update
          sudo yum install tomcat git maven -y
-         service tomcat stop
      rm -rf myweatherapp          
     
  git clone https://github.com/yemmie69/myweatherapp.git
