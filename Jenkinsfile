@@ -32,7 +32,7 @@ pipeline {
             sudo -i
                     sudo yum update
          sudo yum install maven -y
-git clone https://github.com/yemmie69/myweatherapp.git
+git clone https://github.com/yemmie69/myweatherapp
 cd myweatherapp
 mvn clean package
 mvn spring-boot:run -Dapp.weather.locations=Nigeria/Lagos,Nigeria/Kano &
