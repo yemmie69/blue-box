@@ -29,8 +29,12 @@ pipeline {
          steps {
             echo 'terraform apply'
             sh '''
+         
 
-            
+
+
+
+
             
             '''
          }
