@@ -8,22 +8,14 @@ resource "aws_security_group" "Blue-box" {
     from_port   = 8080
     to_port     = 8080
     protocol    = "tcp"
-
-  }
-
-  ingress {
-    description = "TLS from VPC"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-
+    cidr_blocks =  ["52.209.75.151/32"]
   }
 
   egress {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+    //cidr_blocks = ["3.249.122.96/32"]
   }
 
   tags = {
