@@ -2,7 +2,7 @@ resource "aws_instance" "Blue-box_instance" {
   ami           = var.aws-ami
   instance_type = var.instance_type
     key_name = "terraform"
-
+count         = "${var.aws-count}"
 
   user_data = <<EOF
 
@@ -19,6 +19,6 @@ sudo service tomcat restart
 EOF
 
   tags = {
-    Name = "Blue-Box"
+    Name= "nodes ${count.index +1}"
   }
 }

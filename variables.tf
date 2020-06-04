@@ -21,3 +21,8 @@ variable "instance_type" {
 
 }
 
+variable "aws-count" {
+  default = 2
+
+}
+
